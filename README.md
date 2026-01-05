@@ -1,3 +1,5 @@
+Ref: https://github.com/sqldelight/sqldelight/issues/6078
+
 When you sync the project on main branch, it failed with
 ```
 A problem occurred configuring project ':app'.
@@ -241,3 +243,5 @@ Caused by: org.gradle.api.UnknownDomainObjectException: KotlinSourceSet with nam
 	at org.gradle.configuration.project.LifecycleProjectEvaluator$NotifyAfterEvaluate.run(LifecycleProjectEvaluator.java:253)
 	... 191 more
 ```
+
+The workaround is on the `disable-kotlin-sourceset` branch.
